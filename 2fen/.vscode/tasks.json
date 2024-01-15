@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: aarch64-linux-gnu-gcc",
+			"command": "/usr/bin/aarch64-linux-gnu-gcc",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				// "${fileDirname}/${fileBasenameNoExtension}"
+				"a.out",
+				"-lm"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "编译器: /usr/bin/aarch64-linux-gnu-gcc"
+		}
+	]
+}
